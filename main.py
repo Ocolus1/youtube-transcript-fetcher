@@ -40,7 +40,7 @@ def main():
         st.write(readable_transcript)
         
         if st.button("Copy Transcript"):
-            st.text_area("Copy the text below:", value=json.dumps(st.session_state.transcript, indent=4))
+            st.text_area("Copy the text below:", value=readable_transcript)
 
 if __name__ == "__main__":
     main()
